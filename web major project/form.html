@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="form.css">
+    <!--Links an external CSS file named "form.css" to style the HTML elements within the document.-->
+</head>
+
+<body>
+    <div class="container">
+        <!-- A container to wrap the content of the form.-->
+        <h2>Form Validation Project</h2>
+        <form id="myForm" onsubmit="validateForm(event)">
+            <!--The onsubmit attribute in the form tag specifies a JavaScript function validateForm(event) to be executed when the form is submitted. 
+                It prevents the default form submission behavior and instead triggers form validation.-->
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+        <!--This empty <div> will be used to display error messages if form validation fails.-->
+    </div>
+
+    <script src="form.js"></script>
+    <!--Links an external JavaScript file named "form.js" to handle form validation and any other client-side scripting.-->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/*This is a class selector targeting an element with the class "container". It defines styling for a container element.*/
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1.0), 0 6px 20px 0 rgba(0, 0, 0, 1.0);
+    text-shadow: 1px 0px black;
+}
+
+
+/*This class selector targets elements with the class "form-group", typically used to wrap form inputs and their labels.*/
+
+.form-group {
+    margin-bottom: 15px;
+    /*Adds 15 pixels of margin at the bottom of each form group to separate them vertically.*/
+}
+
+
+/*This selector targets <label> elements.*/
+
+label {
+    display: block;
+    /* Makes the labels block-level elements, causing them to start on a new line and take up the full width available.*/
+    margin-bottom: 5px;
+}
+
+
+/*This selector targets <input> elements.*/
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/*This selector targets <button> elements.*/
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /*Changes the mouse cursor to a pointer when hovering over the button, indicating it is clickable.*/
+}
+
+
+/*This class selector targets elements with the class "error-message", used to display error messages.*/
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
